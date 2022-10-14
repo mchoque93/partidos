@@ -1,6 +1,4 @@
-from enum import IntEnum
 from itertools import combinations
-
 
 class Estadistica:
     def __init__(self):
@@ -11,7 +9,6 @@ class Estadistica:
         self.PP = 0
         self.GF = 0
         self.GC = 0
-
 
 class Equipo:
     def __init__(self, nombre):
