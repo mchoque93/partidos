@@ -1,6 +1,4 @@
-from enum import IntEnum
 from itertools import combinations
-
 
 class Estadistica:
     def __init__(self):
