@@ -10,7 +10,6 @@ class Estadistica:
         self.GF = 0
         self.GC = 0
 
-
 class Equipo:
     def __init__(self, nombre):
         self.nombre = nombre
