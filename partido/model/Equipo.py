@@ -1,3 +1,5 @@
+from partido.model.Estadistica import *
+
 class Equipo:
     def __init__(self, nombre):
         self.nombre = nombre

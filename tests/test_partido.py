@@ -1,5 +1,9 @@
 from unittest import TestCase
-from partido.partido import *
+from partido.model.Equipo import *
+from partido.model.Estadistica import *
+from partido.model.Partido import *
+from partido.model.Programa import *
+
 
 class TestValidarTarea(TestCase):
     def test_validar_carga_equipos(self):
