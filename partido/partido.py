@@ -100,3 +100,6 @@ class Partido:
 
     def __contains__(self, item: str):
         return self.equipo1.nombre == item or self.equipo2.nombre == item
+
+#pruebo con bituckeeet
+#puebo mas
