@@ -1,3 +1,8 @@
+from itertools import combinations
+
+from partido.model.Equipo import *
+from partido.model.Partido import *
+
 class Programa:
     def __init__(self):
         self.lista_equipos = self.cargar_equipos()
