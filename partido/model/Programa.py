@@ -1,24 +1,3 @@
-from itertools import combinations
-
-class Estadistica:
-    def __init__(self):
-        self.Pts = 0
-        self.PJ = 0
-        self.PG = 0
-        self.PE = 0
-        self.PP = 0
-        self.GF = 0
-        self.GC = 0
-
-class Equipo:
-    def __init__(self, nombre):
-        self.nombre = nombre
-        self.estadisticas = Estadistica()
-
-    def __repr__(self):
-        return f"{self.nombre}"
-
-
 class Programa:
     def __init__(self):
         self.lista_equipos = self.cargar_equipos()
@@ -87,19 +66,3 @@ class Programa:
 
     def get_partido(self, equipo1: str, equipo2: str):
         return next(partido for partido in self.lista_sorteo if equipo1 in partido and equipo2 in partido)
-
-
-class Partido:
-    def __init__(self, equipo1: "Equipo", equipo2: "Equipo"):
-        self.equipo1 = equipo1
-        self.equipo2 = equipo2
-        self.goles = 0
-
-    def __repr__(self):
-        return f"Partido (equipo1:{self.equipo1} equipo2 {self.equipo2})"
-
-    def __contains__(self, item: str):
-        return self.equipo1.nombre == item or self.equipo2.nombre == item
-
-#pruebo con bituckeeet
-#puebo mas
